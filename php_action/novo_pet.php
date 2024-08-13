@@ -7,11 +7,14 @@
 	if (isset($_POST['btn-cadastrar'])) {
 		
 		$nome = mysqli_escape_string($connection,$_POST['nomePet']);
-		$sobrenome = mysqli_escape_string($connection,$_POST['sobreNomePet']);
-		$email = mysqli_escape_string($connection,$_POST['emailDono']);
+		$raca = mysqli_escape_string($connection,$_POST['racaPet']);
 		$idade = mysqli_escape_string($connection,$_POST['idadePet']);
+		$cor = mysqli_escape_string($connection,$_POST['corPet']);
+		$rga = mysqli_escape_string($connection,$_POST['rgaPet']);
+		$sexo = mysqli_escape_string($connection,$_POST['sexoPet']);
+		
 
-		$sql = "INSERT INTO tbPets(nomePet,sobreNomePet,emailDono,idadePet)VALUES('$nome','$sobrenome','$email','$idade')";
+		$sql = "INSERT INTO tbPets(nomePet,racaPet,idadePet,corPet,rgaPet,sexoPet)VALUES('$nome','$raca','$idade','$cor','$rga','$sexo')";
 
 		if(mysqli_query($connection, $sql)) {
 

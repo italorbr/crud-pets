@@ -6,13 +6,16 @@
 
 	if (isset($_POST['btn-alterar'])) {
 		
+		$codPet = mysqli_escape_string($connection,$_POST['codPet']);
 		$nome = mysqli_escape_string($connection,$_POST['nomePet']);
-		$sobrenome = mysqli_escape_string($connection,$_POST['sobreNomePet']);
-		$email = mysqli_escape_string($connection,$_POST['emailDono']);
+		$raca = mysqli_escape_string($connection,$_POST['racaPet']);
 		$idade = mysqli_escape_string($connection,$_POST['idadePet']);
-		$codCli = mysqli_escape_string($connection,$_POST['codPet']);
+		$cor = mysqli_escape_string($connection,$_POST['corPet']);
+		$rga = mysqli_escape_string($connection,$_POST['rgaPet']);
+		$sexo = mysqli_escape_string($connection,$_POST['sexoPet']);
+		
 
-		$sql = "UPDATE tbPets SET nomePet = '$nome', sobreNomePet = '$sobrenome', emailDono = '$email', idadePet = '$idade' WHERE codPet = '$codCli'";
+		$sql = "UPDATE tbPets SET nomePet = '$nome', racaPet = '$raca', idadePet = '$idade', corPet = '$cor', rgaPet = '$rga', sexoPet = '$sexo' WHERE codPet = '$codPet'";
 
 		if(mysqli_query($connection, $sql)) {
 

@@ -15,9 +15,11 @@
 			<thead>
 				<tr>
 					<th>Nome</th>
-					<th>Sobrenome</th>
+					<th>Raça</th>
 					<th>Idade</th>
-					<th>E-mail</th>
+					<th>Cor</th>
+					<th>RGA</th>
+					<th>Sexo</th>
 				</tr>				
 			</thead>
 			
@@ -35,9 +37,11 @@
 			
 						<tr>
 							<td><?php echo $dados['nomePet']; ?></td>
-							<td><?php echo $dados['sobreNomePet']; ?></td>
-							<td><?php echo $dados['emailDono']; ?></td>
+							<td><?php echo $dados['racaPet']; ?></td>
 							<td><?php echo $dados['idadePet']; ?></td>
+							<td><?php echo $dados['corPet']; ?></td>
+							<td><?php echo $dados['rgaPet']; ?></td>
+							<td><?php echo $dados['sexoPet']; ?></td>
 
 							<td><a href="alterar.php?id=<?php echo $dados['codPet']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
 
@@ -47,7 +51,7 @@
 							  <div id="modal<?php echo $dados['codPet']; ?>" class="modal">
 							    <div class="modal-content">
 							      <h4>Aviso.</h4>
-							      <p>Deseja excluir Pet?</p>
+							      <p>Deseja excluir os dados de <?php echo $dados['nomePet']; ?>? </p>
 							    </div>
 							    <div class="modal-footer">
 							      

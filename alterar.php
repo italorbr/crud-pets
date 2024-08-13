@@ -33,19 +33,29 @@
 				</div>
 				
 				<div class="input-field col s12">
-					<input type="text" name="sobreNomePet" id="sobreNomePet" value="<?php echo $dados['sobreNomePet']; ?>"
+					<input type="text" name="racaPet" id="racaPet" value="<?php echo $dados['racaPet']; ?>"
 					>
-					<label for="sobrenome">Sobrenome</label>
-				</div>
-				
-				<div class="input-field col s12">
-					<input type="text" name="emailDono" id="emailDono" value="<?php echo $dados['emailDono']; ?>">
-					<label for="email">E-mail</label>
+					<label for="raca">Raça</label>
 				</div>
 				
 				<div class="input-field col s12">
 					<input type="text" name="idadePet" id="idadePet" value="<?php echo $dados['idadePet']; ?>">
 					<label for="idade">Idade</label>
+				</div>
+				
+				<div class="input-field col s12">
+					<input type="text" name="corPet" id="corPet" value="<?php echo $dados['corPet']; ?>">
+					<label for="cor">Cor</label>
+				</div>
+
+				<div class="input-field col s12">
+					<input type="text" name="rgaPet" id="rgaPet" value="<?php echo $dados['rgaPet']; ?>">
+					<label for="rga">RGA</label>
+				</div>
+
+				<div class="input-field col s12">
+					<input type="text" name="sexoPet" id="sexoPet" value="<?php echo $dados['sexoPet']; ?>">
+					<label for="sexo">Sexo</label>
 				</div>
 
 				<button type="submit" name="btn-alterar" class="btn">Alterar</button>
