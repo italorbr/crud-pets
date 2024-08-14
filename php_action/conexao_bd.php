@@ -1,7 +1,7 @@
 <?php 
 
 	$server_name = 'localhost';
-	$user_name = 'italo';
+	$user_name = 'root';
 	$password = '';
 	$db_name = 'dbPets';
 
